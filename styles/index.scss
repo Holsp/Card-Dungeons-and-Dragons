@@ -102,7 +102,7 @@ body {
             font-size: 10vh;
             margin: 0;
             transform: translate(0, -50%);
-            cursor:pointer;
+            cursor: default;
             text-transform: uppercase;
         }
         img {
@@ -194,6 +194,7 @@ body {
                 width: 31%;
                 height: 40%;
                 background-color: #fff;
+                text-decoration: none;
                 cursor: pointer;
                 h2 {
                     width: 100%;
