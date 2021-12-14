@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+
+    <meta name="description" content="Karetní dračák, dračí doupě">
+    <meta name="keywords" content="D&D, Dračák, Dračí doupě, karetní dračí doupě, dračí doupě karty">
+    <meta name="author" content="Ondřej Albrecht">
+
+
+
+    <title>Karetní dračák - poděkování</title>
+
+    <link rel="stylesheet" type="text/css" href="../styles/index.css">
+    <link rel="stylesheet" type="text/css" href="../styles/indexMobile.css">
+    <style>
+        @media screen and (max-width: 426px) {
+            body .landing h1 {
+                font-size: 5vh;
+            }
+        }
+    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&family=Rubik:wght@300;500&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="../src/logo.svg" type="image/x-icon">
+
+
+
+</head>
+
+<body>
+    <header>
+        <a href="../index.html" class="coa"><img src="../src/logo.svg" alt="logo"></a>
+
+        <div class="headerContent">
+            <a href="../index.html">Hlavní stránka</a>
+            <a href="pravidla.html">Pravidla</a>
+            <a href="materialy.html">Materiály</a>
+            
+            <div class="other"></div>
+            <a href="#" class="last">Ostatní</a>
+
+            <div class="navElement">
+                <a href="zpetnaVazba.html">Zpětná vazba</a>
+                <a href="podekovani.html">Poděkování</a>
+                <a href="copyright.html">Copyright</a>
+            </div>
+        </div>
+        <div class="logo">
+            KD
+        </div>
+        <div class="burger" onclick="changeBurger(this)">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="menu">
+            <a href="../index.html">Hlavní stránka</a>
+            <a href="pravidla.html">Pravidla</a>
+            
+            <a href="materialy.html">Materiály</a>
+            <a href="#" onclick="showOtherLinks(this)">Ostatní</a>
+            <div class="otherLinks">
+                <a href="zpetnaVazba.html">Zpětná vazba</a>
+                <a href="podekovani.html">Poděkování</a>
+                <a href="copyright.html">Copyright</a>
+            </div>
+        </div>
+        <script>
+            function changeBurger(x) {
+                x.classList.toggle("changeBurger");
+                document.getElementsByClassName("menu")[0].classList.toggle("menuShow");
+            }
+            function showOtherLinks(x) {
+                document.getElementsByClassName("otherLinks")[0].classList.toggle("otherShow");
+            }
+        </script>
+    </header>
+        <div class="landing">
+        <h1>Poděkování</h1>
+        <img src="../src/Dragon.png" alt="Dragon" class="dragon">
+        <img src="../src/DragonMobile.png" alt="DragonMobile" class="dragonMobile">
+
+    </div>
+    <div class="content">
+        <div class="item">
+            <div class="itemContent">
+                <h2>Poděkování</h2>
+                <div class="text">
+                    Rád bych poděkoval mojí <b>rodině a přátelům ze skautského hnutí</b>, že se mnou vydrželi hrát zkušební hry a že mě podporovali.
+                    <br><br>
+                    Nesmím zapomenout poděkovat <b>Vítu Jetmarovi</b> za obrázky ke kartičkám, bez kterých by byla hra jen nudný shluk slov a čísel.
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>©2021 Ondřej Albrecht.<br class="smallFooter"> All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

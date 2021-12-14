@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+
+    <meta name="description" content="Karetní dračák, dračí doupě">
+    <meta name="keywords" content="D&D, Dračák, Dračí doupě, karetní dračí doupě, dračí doupě karty">
+    <meta name="author" content="Ondřej Albrecht">
+
+
+
+    <title>Karetní dračák - poděkování</title>
+
+    <link rel="stylesheet" type="text/css" href="../styles/index.css">
+    <link rel="stylesheet" type="text/css" href="../styles/indexMobile.css">
+    <style>
+        @media screen and (max-width: 426px) {
+            body .landing h1 {
+                font-size: 5vh;
+            }
+        }
+    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&family=Rubik:wght@300;500&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="../src/logo.svg" type="image/x-icon">
+
+
+
+</head>
+
+<body>
+    <header>
+        <a href="../index.html" class="coa"><img src="../src/logo.svg" alt="logo"></a>
+
+        <div class="headerContent">
+            <a href="../index.html">Hlavní stránka</a>
+            <a href="pravidla.html">Pravidla</a>
+            <a href="materialy.html">Materiály</a>
+
+            <div class="other"></div>
+            <a href="#" class="last">Ostatní</a>
+
+            <div class="navElement">
+                <a href="zpetnaVazba.html">Zpětná vazba</a>
+                <a href="podekovani.html">Poděkování</a>
+                <a href="copyright.html">Copyright</a>
+            </div>
+        </div>
+        <div class="logo">
+            KD
+        </div>
+        <div class="burger" onclick="changeBurger(this)">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="menu">
+            <a href="../index.html">Hlavní stránka</a>
+            <a href="pravidla.html">Pravidla</a>
+
+            <a href="materialy.html">Materiály</a>
+            <a href="#" onclick="showOtherLinks(this)">Ostatní</a>
+            <div class="otherLinks">
+                <a href="zpetnaVazba.html">Zpětná vazba</a>
+                <a href="podekovani.html">Poděkování</a>
+                <a href="copyright.html">Copyright</a>
+            </div>
+        </div>
+        <script>
+            function changeBurger(x) {
+                x.classList.toggle("changeBurger");
+                document.getElementsByClassName("menu")[0].classList.toggle("menuShow");
+            }
+            function showOtherLinks(x) {
+                document.getElementsByClassName("otherLinks")[0].classList.toggle("otherShow");
+            }
+        </script>
+    </header>
+    <div class="landing">
+        <h1>Poděkování</h1>
+        <img src="../src/Dragon.png" alt="Dragon" class="dragon">
+        <img src="../src/DragonMobile.png" alt="DragonMobile" class="dragonMobile">
+
+    </div>
+    <div class="content">
+        <div class="item">
+            <div class="itemContent">
+                <h2>Materiály k tisknutí</h2>
+                <div class="text">
+                    Chceš-li hrát je zapotřebí, aby jsi si oboustranně vytiskl následující soubory a nastříhal je na
+                    kartičky.
+                    <ul>
+                        <li><a href="https://drive.google.com/file/d/1daALVk44kQ9Sn_c1heuoDXPzhshe-Irx/view">Karty
+                                bytostí</a></li>
+                        <li><a href="https://drive.google.com/file/d/1_39HneGeWnFF20qQBhAxeSjE0aHj2fbT/view">Karty
+                                krajin</a></li>
+                        <li><a href="https://drive.google.com/file/d/1HNjww4cr7QPX3CGltZG5B7eI5UOPQmYG/view">Mýtické
+                                karty</a></li>
+                        <li><a href="https://drive.google.com/file/d/1Y3vWQBoyAzN-Jhj8z-yFOn_1flv1TnQy/view">Karty
+                                Postav</a></li>
+                        <li><a href="https://drive.google.com/file/d/1tLH6ZCZwXBIE3pSv5TOaRjdMtqXQTN6z/view">Karty
+                                povolání</a></li>
+                        <li><a href="https://drive.google.com/file/d/1rUK6q9ICHTZsd64AdD60qiNTo8zPX5fO/view">Karty
+                                předmětů</a></li>
+                    </ul>
+                    Je dobré mít po ruce <a
+                        href="https://drive.google.com/file/d/181xXA8CzK_1DKDaeuo0aog_qxVU1m55c/view?usp=sharing">papírová
+                        pravidla</a>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="item">
+            <div class="itemContent">
+                <h2>Kniha moudrosti a Karta hráče</h2>
+                <div class="text">
+                    Vytvořil jsem také <a href="https://drive.google.com/file/d/1Ve9xABUjzaLIN1wLYBTIndoYO_8XPlqQ/view">knihu moudrosti</a>, ve které je vše podrobněji vysvětleno.
+                    <br><br>
+                    <a href="https://drive.google.com/file/d/1qy9aah2Vs8oi_b7gj9LeCM4ZBZkJ08Xy/view">Karta hráče</a> je způsob, jak si zpřehlednit hru. Není nutná, ale ulehčí ti práci s tvojí postavou.
+                    
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>©2021 Ondřej Albrecht.<br class="smallFooter"> All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

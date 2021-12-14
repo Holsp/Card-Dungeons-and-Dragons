@@ -1,0 +1,166 @@
+@media screen and (max-width: 950px) {
+    body {
+        header {
+            img {
+                display: none;
+            }
+            .headerContent {
+                display: none;
+            }
+
+            .logo {
+                display: inline-block;
+                position: absolute;
+                font-size: 5vh;
+                top: 50%;
+                left: 5%;
+                transform: translate(0, -50%);
+            }
+            .burger {
+                float: right;
+                margin-right: 1vh;
+                cursor: pointer;
+                .line {
+                    width: 7vh;
+                    margin: 1.75vh;
+                    height: 0.75vh;
+                    background-color: white;
+                    transition: 0.2s;
+                }
+            }
+            .changeBurger {
+                position: relative;
+                .line:nth-child(1) {
+                    -webkit-transform: translate(0vh, 3vh) rotate(-45deg);
+                    transform: translate(0vh, 3vh) rotate(-45deg);
+                }
+                .line:nth-child(2) {
+                    opacity: 0;
+                }
+                .line:nth-child(3) {
+                    -webkit-transform: translate(0vh, -2vh) rotate(45deg);
+                    transform: translate(0vh, -2vh) rotate(45deg);
+                }
+            }
+            .menuShow {
+                display: block;
+                margin-top: 10vh;
+                background-color: #fff;
+                text-align: center;
+                padding-bottom: 5vh;
+                -webkit-box-shadow: 5px 5px 26px 7px rgba(0, 0, 0, 0.25);
+                box-shadow: 5px 5px 26px 7px rgba(0, 0, 0, 0.25);
+                a {
+                    display: block;
+                    font-size: 5vh;
+                    font-weight: bold;
+                    color: #ce3234;
+                    padding: 3vh;
+                }
+            }
+            .otherLinks {
+                display: none;
+            }
+            .otherShow {
+                display: block;
+                background-color: #eee;
+            }
+        }
+        .landing {
+            .dragon {
+                display: none;
+            }
+            .dragonMobile {
+                display: block;
+            }
+        }
+        .content {
+            .item {
+                width: 100%;
+                .itemContent {
+                    padding: 5vh 10vh;
+                    h2 {
+                        text-align: center;
+                    }
+                    p {
+                        font-size: 3.5vh;
+                    }
+                    .text {
+                        ol {
+                            padding: 2vh;
+                        }
+                        ul {
+                            padding-left: 2vh;
+                        }
+                    }
+                    .images {
+                        flex-wrap: wrap-reverse;
+                        img {
+                            display: block;
+                            flex-basis: 100%;
+                            width: 100%;
+                            float: none;
+                            padding: 5vh 0 5vh 0;
+                        }
+                    }
+                }
+            }
+            .row {
+                display: block;
+                .rowItem {
+                    position: relative;
+                    width: 80vw;
+                    display: block;
+                    margin-bottom: 12vh;
+                    h2 {
+                        padding-top: 8vh;
+                        font-size: 7vh;
+                    }
+                    img {
+                        width: 50%;
+                        padding-bottom: 5vh;
+                    }
+                }
+            }
+        }
+        footer {
+            p {
+                text-align: center;
+            }
+            .smallFooter {
+                display: block;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 426px) {
+    body {
+        .landing {
+            h1 {
+                font-size: 8vh;
+            }
+        }
+        .content {
+            .item .itemContent {
+                padding: 5vh 3vh;
+            }
+            .row {
+                .rowItem {
+                    margin-bottom: 0vh;
+                    .smallFooter {
+                        display: block;
+                    }
+                    h2 {
+                        padding-top: 5vh;
+                        font-size: 5vh;
+                    }
+                    img {
+                        width: 50%;
+                        margin-bottom: 0vh;
+                    }
+                }
+            }
+        }
+    }
+}

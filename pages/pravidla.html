@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+
+    <meta name="description" content="Karetní dračák, dračí doupě">
+    <meta name="keywords" content="D&D, Dračák, Dračí doupě, karetní dračí doupě, dračí doupě karty">
+    <meta name="author" content="Ondřej Albrecht">
+
+
+
+    <title>Karetní dračák - pravidla</title>
+
+    <link rel="stylesheet" type="text/css" href="../styles/index.css">
+    <link rel="stylesheet" type="text/css" href="../styles/indexMobile.css">
+    <style>
+        @media screen and (max-width: 426px) {
+            .body .content .item .itemContent {
+                padding: 5vh 2vh 5vh 5vh;
+            }
+        }
+    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&family=Rubik:wght@300;500&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="../src/logo.svg" type="image/x-icon">
+
+
+
+</head>
+
+<body>
+    <header>
+        <a href="../index.html" class="coa"><img src="../src/logo.svg" alt="logo"></a>
+
+        <div class="headerContent">
+            <a href="../index.html">Hlavní stránka</a>
+            <a href="pravidla.html">Pravidla</a>
+            <a href="materialy.html">Materiály</a>
+            
+            <div class="other"></div>
+            <a href="#" class="last">Ostatní</a>
+
+            <div class="navElement">
+                <a href="zpetnaVazba.html">Zpětná vazba</a>
+                <a href="podekovani.html">Poděkování</a>
+                <a href="copyright.html">Copyright</a>
+            </div>
+        </div>
+        <div class="logo">
+            KD
+        </div>
+        <div class="burger" onclick="changeBurger(this)">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="menu">
+            <a href="../index.html">Hlavní stránka</a>
+            <a href="pravidla.html">Pravidla</a>
+            
+            <a href="materialy.html">Materiály</a>
+            <a href="#" onclick="showOtherLinks(this)">Ostatní</a>
+            <div class="otherLinks">
+                <a href="zpetnaVazba.html">Zpětná vazba</a>
+                <a href="podekovani.html">Poděkování</a>
+                <a href="copyright.html">Copyright</a>
+            </div>
+        </div>
+        <script>
+            function changeBurger(x) {
+                x.classList.toggle("changeBurger");
+                document.getElementsByClassName("menu")[0].classList.toggle("menuShow");
+            }
+            function showOtherLinks(x) {
+                document.getElementsByClassName("otherLinks")[0].classList.toggle("otherShow");
+            }
+        </script>
+    </header>
+    <div class="landing">
+        <h1>Pravidla</h1>
+        <img src="../src/Dragon.png" alt="Dragon" class="dragon">
+        <img src="../src/DragonMobile.png" alt="DragonMobile" class="dragonMobile">
+
+    </div>
+    <div class="content">
+        <div class="item">
+            <div class="itemContent">
+                <h2>Příprava hry</h2>
+                <div class="text">Karty se rozdělí do balíčků podle typu (Mýtické a Předměty jsou na jednom balíčku) a
+                    balíčky se
+                    zamíchají. Poté se balíčky položí doprostřed hrací plochy zadní stranou vzhůru. Hráč musí mít
+                    povinně před sebou vyloženy karty: Postava, Povolání a Bytost (poté co ji získá).
+                    <br><br>
+                    <h3>Výběr Postavy</h3>
+                    Vezme si 2 karty, a z nich si vybere jednu (druhou vloží zpátky do balíčku).
+                    <br><br>
+                    <h3>Výběr Povolání</h3>
+                    Vezme si 3 karty, a z nich si vybere jednu (ostatní vloží zpátky do balíčku).
+                </div>
+                <div class="images">
+                    <img src="../src/kolaImg.png">
+                    <img src="../src/kolaText.png">
+                </div>
+
+            </div>
+        </div>
+        <div class="item">
+            <div class="itemContent">
+                <h2>Obecná pravidla</h2>
+                <div class="text">
+
+
+                    <ul>
+                        <li> Bonusy se přičítají v případě, že padne na kostce číslo shodné s číslem v kolonce Bonus.
+                            Bonus
+                            se
+                            uplatní tak, že si hráč přičte k hodu jedna (hodí na kostkách 5 a 3, v kolonce Bonus má
+                            čísla
+                            2/3/5,
+                            tudíž výsledná hodnota hodu je 5+1 a 3+1, což je 10).
+                        </li>
+                        <li> Mýtické karty nelze obnovit, což znamená, že po jejich použití je hráč odloží na odhazovací
+                            hromádku
+                            Předmětů.
+                        </li>
+                        <li> Hodnotu karty Žolík lze přičíst k jakémukoli políčku, kromě Bonusů. Doba, po jakou se
+                            hodnota
+                            Žolíku
+                            přičítá je jedno kolo (nevztahuje se na Životy).
+                        </li>
+                        <li> V druhé fázi hry lze provést jen jednu možnost (Získání, nebo Zahození, nebo Oprava).
+                        </li>
+                        <li> Hráč unese (může mít v ruce) tolik karet, kolik je jeho výsledná Síla (Síla Postavy + Síla
+                            Povolání
+                            + Síla Bytosti).
+                        </li>
+                    </ul>
+
+
+
+
+
+
+                    <h3>Cíl hry:</h3>
+
+                    Hráči si ho sami určí před začátkem hry, podle toho, jaké mají hráči časové možnosti.
+                    <br><br>
+                    <b>Pár příkladů pro inspiraci:</b>
+                    <br>
+                    Přežít 10/15/20 kol
+                    <br>
+                    Porazit 5/10 Bytostí
+                    <br>
+                    Zůstat poslední ve hře, což znamená porazit všechny ostatní hráče
+                    <br>
+                    Mít v ruce všechny Žolíky
+                    <br>
+                    Kdo první získá Draka
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="itemContent">
+                <h2>Průběh hry</h2>
+                <div class="text">
+                    <ol>
+                        <li>
+                            <h3>Otáčení karty Krajina</h3>
+
+                            Na začátku každého kola se určí, kde se hráči nachází otočením karty Krajina. Hráči si
+                            aktualizují
+                            hodnoty (Síla, Životy, …) svých Postav podle této karty.
+                        </li>
+
+                        <li>
+                            <h3>Předmět</h3>
+                            <ul>
+                                <li>
+                                    <b>Získání</b>
+                                    Lízne si 2 karty a jednu z nich si vybere (druhou zahodí).
+                                </li>
+                                <li>
+                                    <b>Zahození</b>
+                                    V případě, že bude hráč chtít uvolnit místo (Krajina mu ubrala Sílu, a už ten
+                                    předmět
+                                    neunese,
+                                    …)
+                                    může hráč odhodit 1 kartu na odhazovací hromádku u Předmětů.
+                                </li>
+                                <li>
+                                    <b>Oprava</b>
+                                    Hráč si může opravit 1 Předmět.
+                                </li>
+                            </ul>
+
+
+
+
+
+
+
+                        </li>
+                        <li>
+                            <h3>Výměna Bytosti</h3>
+
+                            Hráč si může jednou za 5 kol vyměnit kartu Bytosti za jinou, kterou získal.
+
+                            Získá-li hráč svou první Bytost, může ji vyložit hned. Po vyložení Bytosti se její Síla,
+                            Životy
+                            a
+                            Bonusy přičtou k Postavě hráče (první zemře Bytost a až poté Postava).
+                        </li>
+
+                        <li>
+                            <h3>Použití Předmětu</h3>
+                            <ul>
+                                <li>
+                                    Hráč může, ale nemusí, použít Předměty, co má v ruce. Má možnost vyložit (použít) i
+                                    více
+                                    Předmětů.
+                                </li>
+                                <li>
+                                    Po použití Předmětu (i v Boji s Bytostí/Protihráčem) nechá předmět vyložený, ale
+                                    otočí jej
+                                    zadní
+                                    stranou vzhůru, což znamená, že je nutno jej opravit a nejde jej, dokud nebude
+                                    opraven,
+                                    použít.
+                                    V
+                                    2.Fázi hry jej lze opravit, nebo zahodit. Předměty čekající na opravu, se pořád
+                                    počítají,
+                                    jako
+                                    kdyby
+                                    je měl v ruce (musí dodržet počet karet v ruce podle jeho Síly).
+                                </li>
+                                <li>
+                                    Hráč může bojovat se spoluhráči, nebo si dobíjet životy (Lék, Ovoce, …) podle toho,
+                                    co má za
+                                    Předměty k dispozici.
+                                </li>
+                            </ul>
+
+
+
+                            <b>Souboj</b><br>
+                            Je nejprve nutno zabít vyloženou Bytost, až poté lze zabít hráče. Napadený i Útočník mohou
+                            ze
+                            souboje utéct použitím karty Útěk. Kartu Útěk lze použít v jakékoli fázi Souboje.
+                            <br>
+                            <b>Fáze Souboje:</b>
+                            <ol>
+                                <li>
+                                    <b>Hráč určí, na koho bude útočit.</b><br>
+                                    Může si vybrat kteréhokoliv hráče.
+                                </li>
+                                <li>
+                                    <b> Útočník i Napadený vyloží Předměty, které použijí k boji.</b><br>
+                                    V tuto chvíli Útočník i Napadený vyloží libovolný počet Předmětů, a mohou tak použít
+                                    jejich
+                                    Bonusy
+                                    po hodu kostkou.
+                                </li>
+                                <li>
+                                    <b>Útok</b><br>
+                                    Hráč může provést jen jeden Útok za kolo. Útočník si hodí kostkou a určí výsledný
+                                    Útok
+                                    (hodnota
+                                    hodu
+                                    + Bonusy vyložených Předmětů), poté stejným způsobem napadený určí velikost své
+                                    Obrany.
+
+                                </li>
+                                <li>
+                                    <b>Výsledek Souboje</b>
+                                    <ul>
+                                        <li>
+                                            <b> Obrana je větší než Útok nebo Obrana je stejná jako Útok</b><br>
+                                            Napadený se ubránil a nic se mu nestalo.
+
+                                        </li>
+                                        <li>
+                                            <b>Obrana je menší než Útok</b><br>
+                                            Napadený si odečte tolik životů, o kolik převyšuje Útok protivníka jeho
+                                            Obranu. Když je
+                                            jeden z
+                                            hráčů zabit (nezbyli mu žádné Životy), tak ten, kdo ho zabil, si vybere
+                                            jeden z Předmětů
+                                            protihráče
+                                            (Bytost si od protihráče vzít nelze).
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ol>
+
+
+
+
+                        </li>
+
+
+
+
+                        <li>
+                            <h3>Boj s Bytostí</h3>
+
+                            <ul>
+                                <li>
+                                    Jediná možnost, jak získat Bytost. Není povinný. Hráči zachovávají pořadí hry (to
+                                    znamená, že
+                                    když
+                                    Bytost porazí některý hráč, tak hráči v pořadí za ním již toto kolo Bytost získat
+                                    nemohou). Hráč
+                                    může z Boje s Bytostí utéct jen pomocí karty Útěk.
+                                </li>
+                                <li>
+                                    <h3>Průběh Boje:</h3>
+                                    <br>
+                                    <ol>
+                                        <li>
+                                            <b>Hráč vyloží Předměty, které použije k boji.</b><br>
+                                            Může vyložit libovolný počet Předmětů, a může tak použít jejich Bonusy po
+                                            hodu kostkou.
+                                        </li>
+                                        <li>
+                                            <b>Útok</b><br>
+                                            Hráč si hodí kostkou a určí výsledný Útok (hodnota hodu + Bonusy vyložených
+                                            Předmětů). Tuto
+                                            hodnotu
+                                            porovná s počtem životů Bytosti.
+                                        </li>
+                                        <li>
+                                            <b>Výsledek boje</b><br>
+                                            <ul>
+                                                <li>
+                                                    <b>Počet Životů je větší než Útok</b><br>
+                                                    Bytost se ubránila a utekla. Hráč si odečte tolik životů, o kolik
+                                                    převyšuje počet
+                                                    Životů Bytosti
+                                                    jeho Útok. Může bojovat další hráč, nebo jestli není nikdo další na
+                                                    řadě, tak se
+                                                    tato karta
+                                                    Bytosti
+                                                    vrátí dospod balíčku.
+                                                </li>
+                                                <li>
+                                                    <b>Počet Životů je stejný jako Útok nebo je menší než Útok</b><br>
+                                                    Hráč porazil Bytost a může si ji vzít.Nemá-li hráč zatím žádnou
+                                                    bytost, může ji
+                                                    vyložit. Má-li
+                                                    ale
+                                                    již Bytost vyloženou, tak si Bytost nechá v ruce a musí počkat tak
+                                                    dlouho, aby doba
+                                                    mezi
+                                                    výměnami
+                                                    Bytostí byla minimálně 5 kol (vyložil-li Bytost ve 2. kole, tak ji
+                                                    může vyměnit až v
+                                                    7. kole, i
+                                                    kdyby v 5. kole získal další).Limit počtu karet v ruce (Síla) se na
+                                                    karty Bytostí
+                                                    nevztahuje.
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ol>
+                                </li>
+                            </ul>
+                            <b>Bojem s Bytostí kolo končí a následuje další.</b>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>©2021 Ondřej Albrecht.<br class="smallFooter"> All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

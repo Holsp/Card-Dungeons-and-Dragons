@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    
+    <meta name="description" content="Karetní dračák, dračí doupě">
+    <meta name="keywords" content="D&D, Dračák, Dračí doupě, karetní dračí doupě, dračí doupě karty">
+    <meta name="author" content="Ondřej Albrecht">
+
+
+
+    <title>Karetní dračák</title>
+
+    <link rel="stylesheet" type="text/css" href="styles/index.css">
+    <link rel="stylesheet" type="text/css" href="styles/indexMobile.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&family=Rubik:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="src/logo.svg" type="image/x-icon">
+
+
+
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="coa"><img src="src/logo.svg" alt="logo"></a>
+
+        <div class="headerContent">
+            <a href="index.html">Hlavní stránka</a>
+            <a href="pages/pravidla.html">Pravidla</a>
+            <a href="pages/materialy.html">Materiály</a>
+            
+            <div class="other"></div>
+            <a href="#" class="last">Ostatní</a>
+            
+            <div class="navElement">
+                <a href="pages/zpetnaVazba.html">Zpětná vazba</a>
+                <a href="pages/podekovani.html">Poděkování</a>
+                <a href="pages/copyright">Copyright</a>
+            </div>
+        </div>
+        <div class="logo">
+            KD
+        </div>
+        <div class="burger" onclick="changeBurger(this)">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="menu">
+            <a href="index.html">Hlavní stránka</a>
+            <a href="pages/pravidla.html">Pravidla</a>
+            <a href="pages/materialy.html">Materiály</a>
+            <a href="#" onclick="showOtherLinks(this)">Ostatní</a>
+            <div class="otherLinks">
+                <a href="pages/zpetnaVazba.html">Zpětná vazba</a>
+                <a href="pages/podekovani.html">Poděkování</a>
+                <a href="pages/copyright.html">Copyright</a>
+            </div>
+        </div>
+        <script>
+            function changeBurger(x) {
+                x.classList.toggle("changeBurger");
+                document.getElementsByClassName("menu")[0].classList.toggle("menuShow");
+            }
+            function showOtherLinks(x) {
+                document.getElementsByClassName("otherLinks")[0].classList.toggle("otherShow");
+            }
+        </script>
+    </header>
+    <div class="landing">
+        <h1>Karetní dračák</h1>
+            <img src="src/Dragon.png" alt="Dragon" class="dragon">
+            <img src="src/DragonMobile.png" alt="DragonMobile" class="dragonMobile">
+
+    </div>
+    <div class="content">
+        <div class="item">
+            <div class="itemContent">
+                <h2>Vítejte!</h2>
+                <p>Znáte <b>Dračák</b>? Tahle hra je pro ty, co nebaví připravovat dobrodružství na Dračí doupě a chtějí <b>jen
+                    zamíchat karty a hrát</b>! Hra je Print and Play, takže vám stačí <b>pouze tiskárna</b> a chuť po
+                    dobrodružství!</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="rowItem">
+                <h2>Příprava<br class="smallFooter"> hry</h2>
+                <img src="src/book.png" alt="kniha">
+            </div>
+            <div class="rowItem">
+                <h2>Obecná<br class="smallFooter"> pravidla</h2>
+                <img src="src/rules.png" alt="pravidla" style="margin-top: 5vh; margin-bottom: 8vh">
+            </div>
+            <div class="rowItem">
+                <h2>Průběh<br class="smallFooter"> hry</h2>
+                <img src="src/wizard.png" alt="prubeh">
+            </div>
+        </div>
+        <div class="item">
+            <div class="itemContent">
+                <h2>Materiály</h2>
+                <p>Materiály ke stažení můžete nalézt <a href="pages/materialy.html">ZDE</a>.
+                    Obsahují v sobě soubory .pdf které si můžete pohodlně vytisknout. Mějte na paměti že <b>musíte karty
+                    tisknout oboustranně</b>, případně tisknout nadvakrát a přeložit papír.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>©2021 Ondřej Albrecht.<br class="smallFooter"> All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
